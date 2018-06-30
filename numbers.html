@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>  
+<script type="text/javascript" src="js/numbers.js">
+<script src='js/jquery.min.js'></script>
+</script>
+<script type="text/javascript">
+    window.onload = function() {	
+		var i = Math.floor(Math.random() * (numbers.length));	
+		document.getElementById("front").innerHTML = numbers[i][0];
+        document.getElementById("back").innerHTML = numbers[i][1];
+    }
+</script>
+<style>
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<details>
+  <summary id='front'; style="font-size: 100px"; > </summary>
+  <p  id='back'; style="font-size: 100px";></p>  
+</details>
+</div>
+</body>
+
+</html>
